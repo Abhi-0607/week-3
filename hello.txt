@@ -1,1 +1,3 @@
 Hello,World
+Hello,Git!
+This is edited in hello.txt from git
