@@ -3,12 +3,12 @@ pipeline
 agent any 
 stages
 {
-stage("Build and Test")
+stage('Build and Test')
 {
 steps{echo "Build and Test Successful"}
 }
 }
-stage("Generate Artifact")
+stage('Generate Artifact')
 {
 steps{echo "Artifact Generated"}
 }
