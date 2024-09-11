@@ -1,19 +1,21 @@
 pipeline
 {
-agent any 
-stages
+agent any stages
 {
 stage('Build and Test')
 {
-steps{echo "Build and Test Successful"}
+ steps {echo "Build and Test Successful"}
+}
 }
 stage('Generate Artifact')
+              {
+                 steps {"echo Artifact Generated"}
+              }}
+              post
 {
-steps{echo "Artifact Generated"}
-}
-}
-post
+success
 {
-success{echo "Pipeline executed Successfully"}
+    echo 'Pipeline executed Successfully'
 }
 }
+
